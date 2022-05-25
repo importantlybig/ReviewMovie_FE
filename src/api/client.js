@@ -5,5 +5,3 @@ const client = axios.create({
 })
 
 export default client
-
-//https://pntd-be-moviereview.herokuapp.com/api
