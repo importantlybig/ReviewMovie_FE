@@ -13,7 +13,8 @@ export default function TopRatedWebSeries() {
 		const { error, movies } = await getTopRatedMovies('Film', signal)
 		if (error) return updateNotification('error', error)
 
-		setMovies([...movies])
+		// setMovies([...movies])
+		setMovies(...movies)
 	}
 
 	useEffect(() => {
