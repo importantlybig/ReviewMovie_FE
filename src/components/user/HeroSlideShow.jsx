@@ -25,8 +25,8 @@ export default function HeroSlidShow() {
 		const { error, movies } = await getLatestUploads(signal)
 		if (error) return updateNotification('error', error)
 
-		// setSlides([...movies])
-		setSlides(...movies)
+		setSlides([...movies])
+		//setSlides(...movies)
 		setCurrentSlide(movies[0])
 	}
 
