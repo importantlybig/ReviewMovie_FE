@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const client = axios.create({
 	//baseURL: 'http://localhost:8000/api',
-	baseURL: process.env.BE_URL,
+	baseURL: 'https://pntd-be-moviereview.herokuapp.com/api',
 })
 
 export default client
